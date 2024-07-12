@@ -1,0 +1,162 @@
+/* Base styles */
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Adjust font-family as needed */
+    color: rgb(163, 163, 163);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%; /* Adjust padding for responsiveness */
+}
+
+.navi {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit; /* Use default text color */
+}
+
+.nl {
+    text-decoration: none;
+    color: inherit; /* Use default text color */
+}
+
+.nl:hover {
+    color: white;
+}
+
+.nav1, .nav2 {
+    margin: 1rem; /* Adjust margin for spacing */
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.sl {
+    opacity: 1;
+}
+
+.sl:hover {
+    color: white;
+}
+
+.contain,
+.content,
+.econtent {
+    padding: 0 5%; /* Adjust padding for responsiveness */
+}
+
+.sec {
+    margin: 1rem 0;
+}
+
+.secl {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secl:hover .date {
+    color: rgb(255, 255, 255);
+}
+
+.title {
+    color: white;
+    font-size: 1.75rem;
+}
+
+.date {
+    font-size: 1.5rem;
+    color: rgb(163, 163, 163);
+}
+
+.tag {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 5px;
+    border-radius: 7.5px;
+    margin: 15px;
+    display: inline-block; /* Ensure tags are displayed inline */
+}
+
+.tl {
+    text-decoration: none;
+    /* padding: 15px; */
+}
+
+.tag:hover {
+    background-color: rgb(228, 224, 224);
+    color: black;
+}
+
+.econtainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .container,
+    .contain,
+    .content,
+    .econtent {
+        padding: 0 3%;
+    }
+
+    .nav1,
+    .nav2 {
+        font-size: 1.2rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .date {
+        font-size: 1.2rem;
+    }
+
+    .tag {
+        margin: 10px;
+        padding: 3px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container,
+    .contain,
+    .content,
+    .econtent {
+        padding: 0 2%;
+    }
+
+    .nav1,
+    .nav2 {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .date {
+        font-size: 1rem;
+    }
+
+    .tag {
+        margin: 5px;
+        padding: 2px;
+        font-size: 0.8rem;
+    }
+}
+
+.n-content{
+    color: rgb(163, 163, 163);
+    padding: 0 4px;
+}
